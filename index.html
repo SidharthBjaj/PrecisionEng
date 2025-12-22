@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Precision Engineering Ltd | Civil & Land Development BC</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        html { scroll-behavior: smooth; }
+        .hero-gradient { 
+            background: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.85)), 
+            url('https://images.unsplash.com/photo-1541888946425-d81bb19480c5?auto=format&fit=crop&q=80&w=2070'); 
+            background-size: cover; 
+            background-position: center; 
+        }
+        .service-card img { transition: transform 0.5s ease; }
+        .service-card:hover img { transform: scale(1.05); }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans">
+
+    <nav class="sticky top-0 z-50 bg-white shadow-md border-b-2 border-blue-900">
+        <div class="max-w-7xl mx-auto px-6 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-4">
+                <img src="logo_bw.jpeg" alt="Precision Engineering Logo" class="h-16 w-20">
+                <div class="hidden lg:block border-l pl-4 border-slate-200">
+                    <span class="text-xl font-black text-blue-900 block leading-none uppercase">Precision Engineering Ltd.</span>
+                    <span class="text-[10px] font-bold text-slate-500 uppercase tracking-[0.2em]">Excellence in Engineering • Project Success</span>
+                </div>
+            </div>
+            <div class="flex items-center space-x-8">
+                <div class="hidden md:flex space-x-6 text-sm font-bold uppercase tracking-widest">
+                    <a href="#about" class="hover:text-blue-700 transition">About</a>
+                    <a href="#services" class="hover:text-blue-700 transition">Services</a>
+                    <a href="#technical" class="hover:text-blue-700 transition">Technical</a>
+                </div>
+                <a href="#contact" class="bg-blue-900 text-white px-6 py-2 rounded shadow-lg hover:bg-blue-800 transition text-sm font-bold">
+                    REQUEST QUOTE
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="relative py-24 bg-blue-900 text-white overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                <defs><pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M 40 0 L 0 0 0 40" fill="none" stroke="white" stroke-width="1"/></pattern></defs>
+                <rect width="100%" height="100%" fill="url(#grid)" />
+            </svg>
+        </div>
+        <div class="relative max-w-7xl mx-auto px-6 text-center">
+            <h1 class="text-5xl md:text-7xl font-extrabold mb-6 tracking-tight uppercase">Innovative Civil Solutions</h1>
+            <p class="text-2xl md:text-3xl font-light mb-8 text-blue-100 italic">"Excellence in Engineering, Project Success" </p>
+            <p class="text-lg max-w-3xl mx-auto opacity-90 leading-relaxed">
+                We are a team of Civil Engineers (P.Eng.) with an eye for detail and an appreciation for efficiency and economy. Tailored land development and municipal solutions across British Columbia.
+            </p>
+        </div>
+    </header>
+
+    <section id="about" class="py-24 bg-white border-b border-slate-200">
+        <div class="max-w-5xl mx-auto px-6 text-center">
+            <h3 class="text-4xl md:text-5xl font-bold mb-8 text-slate-900">Precision in Every Calculation</h3>
+            <div class="max-w-3xl mx-auto mb-12">
+                <p class="text-xl text-slate-600 leading-relaxed">
+                    At Precision Engineering Ltd, we bring over a decade of experience delivering high-impact civil projects. We are known for cost-effective solutions that meet strict BC regulatory standards.
+                </p>
+            </div>
+            <div class="flex flex-wrap justify-center gap-6 md:gap-12 mb-12">
+                <div class="flex flex-col items-center">
+                    <div class="text-4xl font-black text-blue-900">$60M+</div>
+                    <div class="text-[10px] uppercase font-bold tracking-widest text-slate-500">Infrastructure Managed</div>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="text-4xl font-black text-blue-900">10+ Yrs</div>
+                    <div class="text-[10px] uppercase font-bold tracking-widest text-slate-500">BC Industry Leadership</div>
+                </div>
+            </div>
+            <div class="flex flex-wrap justify-center gap-4 mb-12">
+                <div class="flex items-center gap-3 px-6 py-3 bg-slate-50 rounded-full border border-slate-200">
+                    <i class="fas fa-hard-hat text-blue-900"></i>
+                    <span class="text-sm font-bold uppercase tracking-tight text-slate-700">P.Eng Licensed</span>
+                </div>
+                <div class="flex items-center gap-3 px-6 py-3 bg-slate-50 rounded-full border border-slate-200">
+                    <i class="fas fa-file-signature text-blue-900"></i>
+                    <span class="text-sm font-bold uppercase tracking-tight text-slate-700">MMCD Compliant</span>
+                </div>
+            </div>
+            <p class="italic text-xl text-slate-500 font-light">
+                "We strive for excellence in our work, so our clients can achieve success in their projects." 
+            </p>
+        </div>
+    </section>
+
+        <section id="services" class="py-20 bg-slate-100">
+        <div class="max-w-7xl mx-auto px-6">
+            <h3 class="text-3xl font-black text-center mb-16 uppercase tracking-tight text-blue-900">Core Engineering Services</h3>
+            <div class="grid md:grid-cols-3 gap-8">
+
+
+                <div class="service-card bg-white rounded-xl shadow-lg overflow-hidden border-b-4 border-transparent hover:border-blue-900 transition-all">
+                    <img src="engineer.jpg" class="w-full h-48 object-cover" alt="Civil Design">
+                    <div class="p-8">
+                        <h4 class="text-xl font-bold mb-3 uppercase text-blue-900">Civil Engineering</h4>
+                        <p class="text-sm text-slate-600 leading-relaxed">
+                            </p><ul style="list-style-type: circle;">                            
+                                <li class="text-sm text-slate-600 leading-relaxed">Site servicing and grading plans</li>
+                                <li class="text-sm text-slate-600 leading-relaxed">Stormwater management plans (SWMPs)</li>
+                                <li class="text-sm text-slate-600 leading-relaxed">Watermain, storm, and sanitary sewer design</li>          
+                                <li class="text-sm text-slate-600 leading-relaxed">Roadworks and street infrastructure</li>       
+                                <li class="text-sm text-slate-600 leading-relaxed">Pump station design</li>          
+                                <li class="text-sm text-slate-600 leading-relaxed">Erosion and sediment control (ESC) plans</li>
+                            </ul> 
+                        <p></p>
+                    </div>
+                </div>
+
+
+                 <div class="service-card bg-white rounded-xl shadow-lg overflow-hidden border-b-4 border-transparent hover:border-blue-900 transition-all">
+                    <img src="study.jpg" class="w-full h-48 object-cover" alt="Feasibility">
+                    <div class="p-8">
+                        <h4 class="text-xl font-bold mb-3 uppercase text-blue-900">Feasibility &amp; Studies </h4>
+                        <p class="text-sm text-slate-600 leading-relaxed">Assessing development potential through lot layouts, servicing concepts, and proformas. Our work adheres to <strong>Municipal Engineering Design Criteria</strong>, incorporating sustainable systems such as bioswales, rain gardens, detention tanks, and exfiltration infrastructure.</p>
+                    </div>
+                </div>
+
+
+                <div class="service-card bg-white rounded-xl shadow-lg overflow-hidden border-b-4 border-transparent hover:border-blue-900 transition-all">
+                    <img src="approval.jpg" class="w-full h-48 object-cover" alt="Approvals">
+                    <div class="p-8">
+                        <h4 class="text-xl font-bold mb-3 uppercase text-blue-900">Permitting &amp; Approvals </h4>
+                        <p class="text-sm text-slate-600 leading-relaxed">
+                            </p><ul style="list-style-type: circle; ">                            
+                                <li class="text-sm text-slate-600 leading-relaxed">Servicing Agreements</li>
+                                <li class="text-sm text-slate-600 leading-relaxed">ESC, fill, and building permits</li>
+                                <li class="text-sm text-slate-600 leading-relaxed">Municipal development documentation</li>      
+                                <li class="text-sm text-slate-600 leading-relaxed">We work directly with approving authorities to streamline timelines and reduce project delays.</li>    
+                            </ul> 
+                        <p></p>
+                    </div>
+                </div>
+
+                <div class="service-card bg-white rounded-xl shadow-lg overflow-hidden border-b-4 border-transparent hover:border-blue-900 transition-all">
+                    <img src="cost.jpg" class="w-full h-48 object-cover" alt="Cost Estimates">
+                    <div class="p-8">
+                        <h4 class="text-xl font-bold mb-3 uppercase text-blue-900">Cost Estimates &amp; Proformas </h4>
+                        <p class="text-sm text-slate-600 leading-relaxed">We prepare detailed cost breakdowns, material quantity take-offs, and development proformas to support budgeting, financing, and project viability assessments across residential, commercial, and mixed-use developments.</p>
+                    </div>
+                </div>
+               
+                
+                  <div class="service-card bg-white rounded-xl shadow-lg overflow-hidden border-b-4 border-transparent hover:border-blue-900 transition-all">
+                    <img src="civil.jpg" class="w-full h-48 object-cover" alt="ProjectDelivery">
+                    <div class="p-8">
+                        <h4 class="text-xl font-bold mb-3 uppercase text-blue-900">Project Coordination</h4>
+                        <p class="text-sm text-slate-600 leading-relaxed">
+                            We collaborate with architects, planners, contractors, and municipal staff throughout the project lifecycle <strong>supporting RFIs, tendering, inspection, record drawing review, and construction-phase engineering services.</strong>
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="service-card bg-white rounded-xl shadow-lg overflow-hidden border-b-4 border-transparent hover:border-blue-900 transition-all">
+                    <img src="delivery.jpg" class="w-full h-48 object-cover" alt="Project Delivery">
+                    <div class="p-8">
+                        <h4 class="text-xl font-bold mb-3 uppercase text-blue-900">Project Delivery </h4>
+                        <p class="text-sm text-slate-600 leading-relaxed">Carrying projects from conceptual stage through design into construction. Includes <strong>ESC monitoring and record drawing reviews.</strong></p>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+    </section>
+
+    <section id="technical" class="py-20 bg-blue-900 text-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h3 class="text-3xl font-black mb-8 uppercase tracking-tight">Specialized Municipal Solutions</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <div class="bg-blue-800 p-3 rounded"><i class="fas fa-bolt"></i></div>
+                            <div>
+                                <h5 class="font-bold text-lg">Streetlighting & Utilities</h5>
+                                <p class="text-blue-100 text-sm">Full streetlighting design and utility coordination for onsite/offsite Roadworks.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="bg-blue-800 p-3 rounded"><i class="fas fa-tint"></i></div>
+                            <div>
+                                <h5 class="font-bold text-lg">Sanitary & Storm Pumps</h5>
+                                <p class="text-blue-100 text-sm">Design and implementation of complex pump systems tailored to BC terrain.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="bg-blue-800 p-3 rounded"><i class="fas fa-leaf"></i></div>
+                            <div>
+                                <h5 class="font-bold text-lg">Sustainable Drainage</h5>
+                                <p class="text-blue-100 text-sm">Rain gardens, bioswales, detention tanks, and exfiltration systems.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-blue-800/50 p-10 rounded-2xl border border-blue-700 shadow-inner">
+                    <h4 class="text-xl font-bold mb-6 text-blue-300 uppercase tracking-widest">Sector Expertise </h4>
+                    <ul class="space-y-4">
+                        <li class="flex justify-between border-b border-blue-700 pb-2"><span>Residential Development</span> <i class="fas fa-check text-blue-400"></i></li>
+                        <li class="flex justify-between border-b border-blue-700 pb-2"><span>Commercial Complexes</span> <i class="fas fa-check text-blue-400"></i></li>
+                        <li class="flex justify-between border-b border-blue-700 pb-2"><span>Industrial Subdivisions</span> <i class="fas fa-check text-blue-400"></i></li>
+                        <li class="flex justify-between border-b border-blue-700 pb-2"><span>Municipal Infrastructure</span> <i class="fas fa-check text-blue-400"></i></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-24 bg-white">
+        <div class="max-w-4xl mx-auto px-6 flex flex-col items-center">
+            <div class="text-center mb-16">
+                <h3 class="text-3xl font-black uppercase text-blue-900 mb-4">Direct Project Inquiry</h3>
+                <p class="text-slate-600 italic">"Excellence in Engineering, Project Success" </p>
+            </div>
+            
+            <form action="https://formspree.io/f/mgowzjaw" method="POST" class="w-full grid md:grid-cols-2 gap-6 bg-slate-50 p-8 md:p-12 rounded-2xl shadow-xl border border-slate-200">
+                <input type="hidden" name="_subject" value="New Engineering Inquiry from Precision Website">
+
+                <div class="flex flex-col">
+                    <label class="text-xs font-bold uppercase text-slate-500 mb-2">Full Name / Company</label>
+                    <input type="text" name="name" placeholder="John Doe" required class="p-3 border border-slate-300 rounded focus:ring-2 focus:ring-blue-900 outline-none">
+                </div>
+
+                <div class="flex flex-col">
+                    <label class="text-xs font-bold uppercase text-slate-500 mb-2">Email Address</label>
+                    <input type="email" name="email" placeholder="email@example.com" required class="p-3 border border-slate-300 rounded focus:ring-2 focus:ring-blue-900 outline-none">
+                </div>
+
+                <div class="flex flex-col md:col-span-2">
+                    <label class="text-xs font-bold uppercase text-slate-500 mb-2">Primary Service Interest</label>
+                    <select name="service_interest" class="p-3 border border-slate-300 rounded focus:ring-2 focus:ring-blue-900 outline-none">
+                        <option value="feasibility">Feasibility & Land Development </option>
+                        <option value="civil_design">Civil Design (Water/Storm/Sanitary) </option>
+                        <option value="project_management">Project Management</option>
+                        <option value="stormwater">Stormwater Management & ESC </option>
+                        <option value="permits">Governmental Approvals & Permits </option>
+                    </select>
+                </div>
+
+                <div class="flex flex-col md:col-span-2">
+                    <label class="text-xs font-bold uppercase text-slate-500 mb-2">Project Details</label>
+                    <textarea name="message" rows="5" placeholder="Please describe the project scope, location, and requirements..." required class="p-3 border border-slate-300 rounded focus:ring-2 focus:ring-blue-900 outline-none"></textarea>
+                </div>
+
+                <input type="text" name="_gotcha" style="display:none">
+
+                <div class="md:col-span-2">
+                    <button type="submit" class="w-full bg-blue-900 text-white font-bold py-4 rounded hover:bg-blue-800 transition shadow-lg uppercase tracking-widest flex items-center justify-center gap-3">
+                        <i class="fas fa-paper-plane text-sm"></i> Submit Request
+                    </button>
+                    <p class="text-[10px] text-slate-400 mt-4 text-center">Your data is processed securely for project evaluation purposes only.</p>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer class="bg-slate-900 text-white py-16">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-12 border-b border-slate-800 pb-12 items-center">
+            <div>
+                <img src="logo_bw.jpeg" alt="Precision Engineering Logo" class="h-24 w-auto">
+            </div>
+            <div>
+                <h5 class="font-bold mb-6 uppercase tracking-[0.2em] text-blue-400 text-sm">Contact Details</h5>
+                <p class="mb-4 flex items-center gap-3"><i class="fas fa-phone text-blue-500"></i> 778-596-0101 </p>
+                <p class="flex items-center gap-3 underline"><i class="fas fa-envelope text-blue-500"></i> PrecisionEngBC@gmail.com </p>
+            </div>
+            <div>
+                <h5 class="font-bold mb-6 uppercase tracking-[0.2em] text-blue-400 text-sm">Regulatory </h5>
+                <p class="text-slate-400 text-xs leading-loose">
+                    Servicing Agreements • ESC Permits • Building Permits • Fill Permits • MMCD Standards • BC Building Code
+                </p>
+            </div>
+        </div>
+        <div class="text-center pt-8 text-slate-500 text-[10px] uppercase tracking-[0.3em]">
+            &copy; 2025 Precision Engineering Ltd. | Licensed Professional Engineers of BC
+        </div>
+    </footer>
+
+</body>
+</html>
